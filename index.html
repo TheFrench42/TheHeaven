@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
+    <title>The Hall - Menù Dinamico</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lato&display=swap" rel="stylesheet">
+
+    <!-- CSS esterno -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="language-selector">
+        <label for="language">Seleziona la lingua / Select Language:</label>
+        <select id="language">
+            <option value="it">Italiano</option>
+            <option value="en">English</option>
+        </select>
+    </div>
+
+    <img src="Logo_TheHall.png" alt="Logo The Hall" class="logo">
+
+    <div class="container lang-block" id="it">
+        <h1>Benvenuti a The Hall</h1>
+        <div id="menu-it"><!-- pulsanti dinamici --></div>
+    </div>
+
+    <div class="container lang-block hidden" id="en">
+        <h1>Welcome to The Hall</h1>
+        <div id="menu-en"><!-- pulsanti dinamici --></div>
+    </div>
+
+    <!-- JS esterno -->
+    <script src="script.js"></script>
+</body>
+</html>
